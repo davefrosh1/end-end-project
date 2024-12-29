@@ -1,0 +1,12 @@
+preprocess:
+        input_data: "data/raw/data.csv"
+        output_data: "data/processed/data.csv"
+
+train:
+    input_data: "data/processed/data.csv"
+    model_path: "models/model.pkl"
+    random_state: 42
+    n_estimators: 400
+    max_depth: 10
+    min_samples_split: 3
+    min_samples_leaf: 2
